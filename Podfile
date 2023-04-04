@@ -6,7 +6,7 @@ target 'Cloud' do
   use_frameworks!
 
   # Pods for Cloud
-	pod 'Kingfisher'
+  pod 'Kingfisher'
 
   target 'CloudTests' do
     inherit! :search_paths
