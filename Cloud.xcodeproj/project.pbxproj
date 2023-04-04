@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55559C6029DBD78A00C4EAFE /* CloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55559C5F29DBD78A00C4EAFE /* CloudTests.swift */; };
 		555802EA29D0FDB800539588 /* CloudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555802E929D0FDB800539588 /* CloudApp.swift */; };
 		555802EC29D0FDB800539588 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555802EB29D0FDB800539588 /* ContentView.swift */; };
 		555802EE29D0FDB900539588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555802ED29D0FDB900539588 /* Assets.xcassets */; };
 		555802F129D0FDB900539588 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555802F029D0FDB900539588 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55559C6129DBD78A00C4EAFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 555802DE29D0FDB800539588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 555802E529D0FDB800539588;
+			remoteInfo = Cloud;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		55559C5D29DBD78A00C4EAFE /* CloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55559C5F29DBD78A00C4EAFE /* CloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTests.swift; sourceTree = "<group>"; };
 		555802E629D0FDB800539588 /* Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555802E929D0FDB800539588 /* CloudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudApp.swift; sourceTree = "<group>"; };
 		555802EB29D0FDB800539588 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		55559C5A29DBD78A00C4EAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		555802E329D0FDB800539588 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +52,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55559C5E29DBD78A00C4EAFE /* CloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				55559C5F29DBD78A00C4EAFE /* CloudTests.swift */,
+			);
+			path = CloudTests;
+			sourceTree = "<group>";
+		};
 		555802DD29D0FDB800539588 = {
 			isa = PBXGroup;
 			children = (
 				555802E829D0FDB800539588 /* Cloud */,
+				55559C5E29DBD78A00C4EAFE /* CloudTests */,
 				555802E729D0FDB800539588 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				555802E629D0FDB800539588 /* Cloud.app */,
+				55559C5D29DBD78A00C4EAFE /* CloudTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +100,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		55559C5C29DBD78A00C4EAFE /* CloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55559C6329DBD78A00C4EAFE /* Build configuration list for PBXNativeTarget "CloudTests" */;
+			buildPhases = (
+				55559C5929DBD78A00C4EAFE /* Sources */,
+				55559C5A29DBD78A00C4EAFE /* Frameworks */,
+				55559C5B29DBD78A00C4EAFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55559C6229DBD78A00C4EAFE /* PBXTargetDependency */,
+			);
+			name = CloudTests;
+			productName = CloudTests;
+			productReference = 55559C5D29DBD78A00C4EAFE /* CloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		555802E529D0FDB800539588 /* Cloud */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 555802F429D0FDB900539588 /* Build configuration list for PBXNativeTarget "Cloud" */;
@@ -97,6 +145,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					55559C5C29DBD78A00C4EAFE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 555802E529D0FDB800539588;
+					};
 					555802E529D0FDB800539588 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -116,11 +168,19 @@
 			projectRoot = "";
 			targets = (
 				555802E529D0FDB800539588 /* Cloud */,
+				55559C5C29DBD78A00C4EAFE /* CloudTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		55559C5B29DBD78A00C4EAFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		555802E429D0FDB800539588 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55559C5929DBD78A00C4EAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55559C6029DBD78A00C4EAFE /* CloudTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		555802E229D0FDB800539588 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +212,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		55559C6229DBD78A00C4EAFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 555802E529D0FDB800539588 /* Cloud */;
+			targetProxy = 55559C6129DBD78A00C4EAFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		55559C6429DBD78A00C4EAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TY7MRP429;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group.hanso.testapp.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloud.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cloud";
+			};
+			name = Debug;
+		};
+		55559C6529DBD78A00C4EAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TY7MRP429;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group.hanso.testapp.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloud.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cloud";
+			};
+			name = Release;
+		};
 		555802F229D0FDB900539588 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -264,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cloud/Preview Content\"";
@@ -282,6 +395,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = group.hanso.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cloud/Preview Content\"";
@@ -311,6 +426,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = group.hanso.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,6 +436,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		55559C6329DBD78A00C4EAFE /* Build configuration list for PBXNativeTarget "CloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55559C6429DBD78A00C4EAFE /* Debug */,
+				55559C6529DBD78A00C4EAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		555802E129D0FDB800539588 /* Build configuration list for PBXProject "Cloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
