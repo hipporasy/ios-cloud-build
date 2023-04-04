@@ -119,6 +119,7 @@
 		555802DD29D0FDB800539588 = {
 			isa = PBXGroup;
 			children = (
+				55559C7529DBF05000C4EAFE /* ci_scripts */,
 				555802E829D0FDB800539588 /* Cloud */,
 				55559C5E29DBD78A00C4EAFE /* CloudTests */,
 				55559C6B29DBDE4900C4EAFE /* CloudUITests */,
@@ -141,7 +142,6 @@
 		555802E829D0FDB800539588 /* Cloud */ = {
 			isa = PBXGroup;
 			children = (
-				55559C7529DBF05000C4EAFE /* ci_scripts */,
 				555802E929D0FDB800539588 /* CloudApp.swift */,
 				555802EB29D0FDB800539588 /* ContentView.swift */,
 				555802ED29D0FDB900539588 /* Assets.xcassets */,
@@ -178,7 +178,6 @@
 				75F3972E81367108EBC4FB30 /* Pods-CloudTests.debug.xcconfig */,
 				2FB3DA4F7108C5B7BECCF342 /* Pods-CloudTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
